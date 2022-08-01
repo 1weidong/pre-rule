@@ -17,5 +17,16 @@
     "vue-template-compiler": "^2.6.14",
     "webpack": "^4.46.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.21.0",
+    "eslint-define-config": "^1.6.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "vue-eslint-parser": "^9.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
