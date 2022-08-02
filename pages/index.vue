@@ -1,6 +1,7 @@
 <template>
     <div class="a">
         <Tutorial />
+        <p>测试一下</p>
     </div>
 </template>
 
