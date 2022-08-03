@@ -15,13 +15,17 @@ module.exports = {
                 "selector-pseudo-class-no-unknown": [
                     true,
                     {
-                        ignorePseudoClasses: ["deep"],
+                        ignorePseudoClasses: ["deep", "global"],
                     },
                 ],
                 "selector-pseudo-element-no-unknown": [
                     true,
                     {
-                        ignorePseudoElements: ["v-deep"],
+                        ignorePseudoElements: [
+                            "v-deep",
+                            "v-global",
+                            "v-slotted",
+                        ],
                     },
                 ],
             },
