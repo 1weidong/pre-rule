@@ -6,7 +6,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "commit": "cz"
   },
   "dependencies": {
     "core-js": "^3.19.3",
@@ -20,16 +21,21 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
+    "commitizen": "^4.2.5",
+    "commitlint-config-cz": "^0.13.3",
     "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^6.9.1",
     "eslint": "^8.21.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-define-config": "^1.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.3.0",
     "husky": "^8.0.1",
+    "node-sass": "5.0.0",
     "postcss-html": "^1.5.0",
     "postcss-sass": "^0.5.0",
     "prettier": "^2.7.1",
+    "sass-loader": "10.1.1",
     "stylelint": "^14.9.1",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-prettier": "^9.0.3",
@@ -40,7 +46,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "./node_modules/cz-customizable"
     }
   }
 }
