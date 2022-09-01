@@ -1,4 +1,8 @@
 export default {
+    server: {
+        port: 8900,
+    },
+
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
         title: "pre-rule",
@@ -30,7 +34,21 @@ export default {
     buildModules: [],
 
     // Modules: https://go.nuxtjs.dev/config-modules
-    modules: [],
+    modules: [
+        [
+            "@nuxtjs/i18n",
+            {
+                locales: [
+                    { code: "zh-cn", iso: "zh-CN", file: "zh-cn.json" },
+                    { code: "zh-hk", iso: "zh-HK", file: "zh-hk.json" },
+                    { code: "en", iso: "en-US", file: "en.json" },
+                ],
+                defaultLocale: "zh-cn",
+                fallbackLocale: "zh-cn",
+                langDir: "~/lang/",
+            },
+        ],
+    ],
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
